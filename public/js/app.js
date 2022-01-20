@@ -70722,20 +70722,22 @@ var Query = /*#__PURE__*/function (_Component) {
           value: "back"
         }));
       }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "jumbotron",
         style: margin
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
         className: "display-4"
       }, "Desculpe !!!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "lead"
-      }, "A sua query nao teve resultados, SFF tente alterar os valores dos canais de tv ou velocidade da internet.."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
+      }, "A sua query n\xE3o teve resultados, SFF tente alterar os valores dos canais de Tv ou velocidade da internet.."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
         className: "my-4"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Obrigado."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         type: "submit",
         onClick: this.props.handler,
         className: "btn btn-primary btn-lg",
         value: "back"
-      })));
+      }))));
     }
   }]);
 
