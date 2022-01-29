@@ -70683,7 +70683,7 @@ var Query = /*#__PURE__*/function (_Component) {
           className: "card-text"
         }, "Telefone casa: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, product.landLine)), _this2.props.values.phones == 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           className: "card-text"
-        }, "Pre\xE7o: ", product.phones0), _this2.props.values.phones == 1 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        }, "Pre\xE7o: ", product.phones0), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Desconto de ", product.discount, "\u20AC durante ", product.discountTime, " meses."), _this2.props.values.phones == 1 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           className: "card-text"
         }, "1 cartao movel", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " Pre\xE7o: ", product.phones1), _this2.props.values.phones == 2 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           className: "card-text"

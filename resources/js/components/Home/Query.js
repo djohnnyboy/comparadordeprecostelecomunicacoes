@@ -38,6 +38,7 @@ export default class Query extends Component {
                                         <p className="card-text">Internet casa: {product.internetGb} GB</p>
                                         <p className="card-text">Telefone casa: <small>{product.landLine}</small></p>
                                         {this.props.values.phones == 0 && <p className="card-text">Preço: {product.phones0}</p>}
+                                        <p>Desconto de {product.discount}€ durante {product.discountTime} meses.</p>
                                         {this.props.values.phones == 1 && <p className="card-text">1 cartao movel<br/> Preço: {product.phones1}</p>}
                                         {this.props.values.phones == 2 && <p className="card-text">2 cartoes movel<br/> Preço: {product.phones2}</p>}
                                         {this.props.values.phones == 3 && <p className="card-text">3 cartoes movel<br/> Preço: {product.phones3}</p>}
