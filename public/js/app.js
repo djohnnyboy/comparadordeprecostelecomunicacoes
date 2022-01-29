@@ -70651,7 +70651,7 @@ var Query = /*#__PURE__*/function (_Component) {
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "row"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "offset-md-2 col-md-6"
+          className: "offset-md-2 col-md-6 mt-3"
         }, product.company_id == 1 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
           src: "images/meo.png",
           className: "img-fluid img-thumbnail rounded-start",

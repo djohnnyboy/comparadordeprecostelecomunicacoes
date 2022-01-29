@@ -25,7 +25,7 @@ export default class Query extends Component {
                     <div className="container" style={margin} key={product.id}>
                         <div className="card  border mb-1">
                             <div className="row">
-                                <div className="offset-md-2 col-md-6">
+                                <div className="offset-md-2 col-md-6 mt-3">
                                     {product.company_id == 1 && <img src="images/meo.png" className="img-fluid img-thumbnail rounded-start" alt="meo" />}
                                     {product.company_id == 2 && <img src="images/nowo.png" className="img-fluid img-thumbnail rounded-start" alt="nowo" />}
                                     {product.company_id == 3 && <img src="images/nos.png" className="img-fluid img-thumbnail rounded-start" alt="nos" />}
