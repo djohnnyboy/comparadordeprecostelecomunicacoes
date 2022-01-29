@@ -10,6 +10,8 @@ export default class Toggle extends Component {
             errors: [],
             products: {},
             localities: {},
+            internetGb: '',
+            channels: '',
             query: {
                 contractTime: '', 
                 number: '',
@@ -28,8 +30,10 @@ export default class Toggle extends Component {
 
         this.handleChangeEmail = this.handleChangeEmail.bind(this);
         this.handleChangeNumber = this.handleChangeNumber.bind(this);
+        /*
         this.handleChangeChannels = this.handleChangeChannels.bind(this);
         this.handleChangeInternetGb = this.handleChangeInternetGb.bind(this);
+        */
         this.handleChangePhones = this.handleChangePhones.bind(this);
         this.handleChangePostCode = this.handleChangePostCode.bind(this);
         this.handleChangePostCodeAux = this.handleChangePostCodeAux.bind(this);
@@ -44,7 +48,9 @@ export default class Toggle extends Component {
         axios.post('/api/products').then(json => {
             this.setState({
                 products: json.data.products,
-                localities: json.data.localities
+                localities: json.data.localities,
+                internetGb: json.data.internetGb,
+                channels: json.data.channels
             })
         }).catch(error => {
             this.setState({
@@ -59,8 +65,8 @@ export default class Toggle extends Component {
             contractTime: this.state.query.contractTime, 
             number: this.state.query.number,
             email: this.state.query.email, 
-            channels: this.state.query.channels,
-            internetGb: this.state.query.internetGb,
+            channels: this.state.channels,
+            internetGb: this.state.internetGb,
             landline: this.state.query.landline,
             phones: this.state.query.phones,
             postCode: this.state.query.postCode,
@@ -107,7 +113,7 @@ export default class Toggle extends Component {
             }
         }));
     }
-
+/*
     handleChangeChannels (event){
         let value = event.target.value;
         this.setState(prevState => ({
@@ -125,7 +131,7 @@ export default class Toggle extends Component {
             }
         }));
     }
-
+*/
     handleChangePhones (event){
         let value = event.target.value;
         this.setState(prevState => ({

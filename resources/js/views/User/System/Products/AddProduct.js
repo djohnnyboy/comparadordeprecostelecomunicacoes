@@ -42,7 +42,7 @@ export default class AddProduct extends Component {
 
         this.hasErrorFor = this.hasErrorFor.bind(this);
         this.renderErrorFor = this.renderErrorFor.bind(this);
-       this.handleNewProduct = this.handleNewProduct.bind(this); 
+        this.handleNewProduct = this.handleNewProduct.bind(this); 
     }
 
     componentDidMount (){

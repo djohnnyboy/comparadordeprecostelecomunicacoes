@@ -33,7 +33,7 @@ export default class header extends Component {
             <div className="fixed-top">
             <div className="collapse" id="navbarToggleExternalContent">
                 <div className="bg-dark p-4">
-                <h5 className="text-white h4">Comparador Preços Telecomunicações</h5>
+                <h5 className="text-white h4">Ligue já</h5>
                 <span className="text-muted">926136060</span>
               
                 <form onSubmit={this.logOut}>
@@ -45,7 +45,7 @@ export default class header extends Component {
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
                 </button>
-                
+                <h6 className="text-white float-right mt-1">Comparador de preços Telecomunicações</h6>
             </nav>
             </div>
         )

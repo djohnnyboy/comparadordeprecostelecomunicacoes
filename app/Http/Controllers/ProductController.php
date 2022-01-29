@@ -26,13 +26,16 @@ class ProductController extends Controller
     public function index()
     {
        $products = $this->product::all();
-       $channels = $this->product::orderBy('channels','desc')->distinct()->get('channels');
-       $internetGb = $this->product::orderBy('internetGb','desc')->distinct()->get('internetGb');
+       #$channels = $this->product::orderBy('channels','desc')->distinct()->get('channels');
+       #$internetGb = $this->product::orderBy('internetGb','desc')->distinct()->get('internetGb');
+       $channels = $this->product::orderBy('channels','desc')->distinct()->first();
+       $internetGb = $this->product::orderBy('internetGb','desc')->distinct()->first();
+       
        $locality = $this->locality::all();
         if ($channels) {
             return response()->json([
-                                'channels' => $channels, 
-                                'internetGb' => $internetGb, 
+                                'channels' => $channels->channels, 
+                                'internetGb' => $internetGb->internetGb, 
                                 'products' => $products,
                                 'localities' => $locality],
                                 201);

@@ -34,9 +34,9 @@ class QueryController extends Controller
         $validateData = $request->validate([
             'contractTime' => ['required', 'numeric','bail'],
             'email' => ['required', 'email','bail'],
+            'channels' => ['required', 'integer','bail'],
+            'internetGb' => ['required', 'integer','bail'],
             'number' => ['required','numeric','digits_between:1,15','bail'],
-            'channels' => ['required', 'numeric','bail'],
-            'internetGb' => ['required', 'numeric','bail'],
             'phones' => ['required','numeric','bail'],
             'postCode' => ['required','numeric',
                             'digits:4',

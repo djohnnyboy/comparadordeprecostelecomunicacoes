@@ -5,8 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
         <meta http-equiv="Cache-control" content="public">
-        <title>Laravel</title>
-
+        <meta name="description" content="Comparador de preços de telecomunicações"/>
+        <meta name="keywords" content="comparador, comparador de preços, comparador preços, preços telecomunicações, comparador preços bancos" />
+        <title>Comparador de Preços telecomunicações</title>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <!-- Styles -->

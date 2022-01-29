@@ -7,7 +7,7 @@ export default class StinkyFooter extends Component {
             <div>
                 <footer className="bg-dark text-center text-white mt-5">                  
                     <div className="text-center p-3">
-                        © 2020 Copyright
+                        email: info@comparadordeprecostelecomunicacoes.pt
                     </div>
                 </footer>              
             </div>

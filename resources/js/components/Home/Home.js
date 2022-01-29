@@ -13,7 +13,7 @@ class Home extends Component {
         };     
     }
 
-   
+  /* 
     componentWillMount (){
         axios.post('/api/products').then(json => {
             this.setState({
@@ -27,12 +27,12 @@ class Home extends Component {
         }).finally(this.setState({errors: ' ' }));
     } 
     
-
+*/
     render() {
-
+/*
         let { channels } = this.state;
         let { internetGb } = this.state;
-
+*/
         const margin = {
             marginTop: "50px"
         } 
@@ -65,9 +65,9 @@ class Home extends Component {
             <div className="container" style={margin}>
                 <div className="row">
                     <div className="offset-md-3 col-md-6 offset-md-3">
-                        <div className="card">
+                        <div className="card mt-5">
                             <div className="card-header">
-                                Comparador de telecomunicaçoes
+                                Preencha o formulario
                             </div>
                             <div className="card-body">
                             <form onSubmit={this.props.handleQuery}>
@@ -108,7 +108,7 @@ class Home extends Component {
                                     placeholder="insira seu telefone"
                                     />
                                     {this.props.renderError('number')}
-                            
+                                {/*
                                 <label htmlFor="channels" className="mt-3">Canais Tv</label>
                                  <select 
                                     className={`form-control form-control-lg mt-3 
@@ -118,12 +118,14 @@ class Home extends Component {
                                     onChange={this.props.handleChannels}
                                     >
                                    <option>nº max de canais...</option> 
+                                   
                                     {channels.map((t, i) => { 
                                         return <option key={i}>{t.channels}</option>
-                                    })} 
+                                    })}
+                                   
                                 </select>
                                     {this.props.renderError('channels')} 
-
+                                 
                                  <label className="mt-3">Internet casa max:</label>
                                 <select 
                                     className={`form-control form-control-lg mt-3 
@@ -131,14 +133,15 @@ class Home extends Component {
                                     id="internetGb"
                                     value={this.props.values.internetGb || ''}
                                     onChange={this.props.handleInternetGb}>
-                                    <option>Velocidade max: da internet...</option> 
+                                    <option>Velocidade max: da internet..</option> 
+                                   
                                     {internetGb.map((n, i )=> {
                                         return <option key={i}>{n.internetGb}</option>
                                     })} 
-                                    
+                                   
                                 </select> 
                                     {this.props.renderError('internetGb')} 
-
+                               */}
                                 <label htmlFor="phones" className="mt-3">Cartoes de Telemoveis + internet </label>
                                     <svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-phone" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <path fillRule="evenodd" d="M11 1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>

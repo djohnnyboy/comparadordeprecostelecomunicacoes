@@ -70199,7 +70199,7 @@ var StinkyFooter = /*#__PURE__*/function (_Component) {
         className: "bg-dark text-center text-white mt-5"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "text-center p-3"
-      }, "\xA9 2020 Copyright")));
+      }, "email: info@comparadordeprecostelecomunicacoes.pt")));
     }
   }]);
 
@@ -70303,7 +70303,7 @@ var header = /*#__PURE__*/function (_Component) {
         className: "bg-dark p-4"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
         className: "text-white h4"
-      }, "Comparador Pre\xE7os Telecomunica\xE7\xF5es"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      }, "Ligue j\xE1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "text-muted"
       }, "926136060"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
         onSubmit: this.logOut
@@ -70321,7 +70321,9 @@ var header = /*#__PURE__*/function (_Component) {
         "aria-label": "Toggle navigation"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "navbar-toggler-icon"
-      }))));
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+        className: "text-white float-right mt-1"
+      }, "Comparador de pre\xE7os Telecomunica\xE7\xF5es")));
     }
   }]);
 
@@ -70392,32 +70394,32 @@ var Home = /*#__PURE__*/function (_Component) {
     };
     return _this;
   }
+  /* 
+    componentWillMount (){
+        axios.post('/api/products').then(json => {
+            this.setState({
+                channels: json.data.channels,
+                internetGb: json.data.internetGb
+            })
+        }).catch(error => {
+            this.setState({
+                errors: error.json.data.errors
+            })
+        }).finally(this.setState({errors: ' ' }));
+    } 
+    
+  */
+
 
   _createClass(Home, [{
-    key: "componentWillMount",
-    value: function componentWillMount() {
-      var _this2 = this;
-
-      axios__WEBPACK_IMPORTED_MODULE_2___default.a.post('/api/products').then(function (json) {
-        _this2.setState({
-          channels: json.data.channels,
-          internetGb: json.data.internetGb
-        });
-      })["catch"](function (error) {
-        _this2.setState({
-          errors: error.json.data.errors
-        });
-      })["finally"](this.setState({
-        errors: ' '
-      }));
-    }
-  }, {
     key: "render",
     value: function render() {
       var _React$createElement, _React$createElement2;
 
-      var channels = this.state.channels;
-      var internetGb = this.state.internetGb;
+      /*
+              let { channels } = this.state;
+              let { internetGb } = this.state;
+      */
       var margin = {
         marginTop: "50px"
       };
@@ -70468,10 +70470,10 @@ var Home = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "offset-md-3 col-md-6 offset-md-3"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "card"
+        className: "card mt-5"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-header"
-      }, "Comparador de telecomunica\xE7oes"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Preencha o formulario"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-body"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
         onSubmit: this.props.handleQuery
@@ -70503,29 +70505,6 @@ var Home = /*#__PURE__*/function (_Component) {
         onChange: this.props.handleNumber,
         placeholder: "insira seu telefone"
       }), this.props.renderError('number'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-        htmlFor: "channels",
-        className: "mt-3"
-      }, "Canais Tv"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
-        className: "form-control form-control-lg mt-3 \n                                    ".concat(this.props.hasError('channels') ? 'is-invalid' : ''),
-        id: "channels",
-        value: this.props.values.channels || '',
-        onChange: this.props.handleChannels
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "n\xBA max de canais..."), channels.map(function (t, i) {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
-          key: i
-        }, t.channels);
-      })), this.props.renderError('channels'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-        className: "mt-3"
-      }, "Internet casa max:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
-        className: "form-control form-control-lg mt-3 \n                                    ".concat(this.props.hasError('internetGb') ? 'is-invalid' : ''),
-        id: "internetGb",
-        value: this.props.values.internetGb || '',
-        onChange: this.props.handleInternetGb
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", null, "Velocidade max: da internet..."), internetGb.map(function (n, i) {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
-          key: i
-        }, n.internetGb);
-      })), this.props.renderError('internetGb'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         htmlFor: "phones",
         className: "mt-3"
       }, "Cartoes de Telemoveis + internet "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
@@ -70715,12 +70694,7 @@ var Query = /*#__PURE__*/function (_Component) {
         }, "4 cartoes movel", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " Pre\xE7o: ", product.phones4), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
           onClick: _this2.props.messageContact,
           className: "btn btn-danger"
-        }, "Obter Oferta")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-          type: "submit",
-          onClick: _this2.props.handler,
-          className: "btn btn-primary w-100 mt-5",
-          value: "back"
-        }));
+        }, "Obter Oferta")))))));
       }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -70737,7 +70711,12 @@ var Query = /*#__PURE__*/function (_Component) {
         onClick: this.props.handler,
         className: "btn btn-primary btn-lg",
         value: "back"
-      }))));
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "submit",
+        onClick: this.props.handler,
+        className: "btn btn-primary w-100 mt-5",
+        value: "back"
+      }));
     }
   }]);
 
@@ -70810,6 +70789,8 @@ var Toggle = /*#__PURE__*/function (_Component) {
       errors: [],
       products: {},
       localities: {},
+      internetGb: '',
+      channels: '',
       query: {
         contractTime: '',
         number: '',
@@ -70827,8 +70808,11 @@ var Toggle = /*#__PURE__*/function (_Component) {
     _this.handleChangeContractTime = _this.handleChangeContractTime.bind(_assertThisInitialized(_this));
     _this.handleChangeEmail = _this.handleChangeEmail.bind(_assertThisInitialized(_this));
     _this.handleChangeNumber = _this.handleChangeNumber.bind(_assertThisInitialized(_this));
-    _this.handleChangeChannels = _this.handleChangeChannels.bind(_assertThisInitialized(_this));
-    _this.handleChangeInternetGb = _this.handleChangeInternetGb.bind(_assertThisInitialized(_this));
+    /*
+    this.handleChangeChannels = this.handleChangeChannels.bind(this);
+    this.handleChangeInternetGb = this.handleChangeInternetGb.bind(this);
+    */
+
     _this.handleChangePhones = _this.handleChangePhones.bind(_assertThisInitialized(_this));
     _this.handleChangePostCode = _this.handleChangePostCode.bind(_assertThisInitialized(_this));
     _this.handleChangePostCodeAux = _this.handleChangePostCodeAux.bind(_assertThisInitialized(_this));
@@ -70847,7 +70831,9 @@ var Toggle = /*#__PURE__*/function (_Component) {
       axios.post('/api/products').then(function (json) {
         _this2.setState({
           products: json.data.products,
-          localities: json.data.localities
+          localities: json.data.localities,
+          internetGb: json.data.internetGb,
+          channels: json.data.channels
         });
       })["catch"](function (error) {
         _this2.setState({
@@ -70867,8 +70853,8 @@ var Toggle = /*#__PURE__*/function (_Component) {
         contractTime: this.state.query.contractTime,
         number: this.state.query.number,
         email: this.state.query.email,
-        channels: this.state.query.channels,
-        internetGb: this.state.query.internetGb,
+        channels: this.state.channels,
+        internetGb: this.state.internetGb,
         landline: this.state.query.landline,
         phones: this.state.query.phones,
         postCode: this.state.query.postCode,
@@ -70925,30 +70911,26 @@ var Toggle = /*#__PURE__*/function (_Component) {
         };
       });
     }
-  }, {
-    key: "handleChangeChannels",
-    value: function handleChangeChannels(event) {
-      var value = event.target.value;
-      this.setState(function (prevState) {
-        return {
-          query: _objectSpread(_objectSpread({}, prevState.query), {}, {
-            channels: value
-          })
-        };
-      });
-    }
-  }, {
-    key: "handleChangeInternetGb",
-    value: function handleChangeInternetGb(event) {
-      var value = event.target.value;
-      this.setState(function (prevState) {
-        return {
-          query: _objectSpread(_objectSpread({}, prevState.query), {}, {
-            internetGb: value
-          })
-        };
-      });
-    }
+    /*
+        handleChangeChannels (event){
+            let value = event.target.value;
+            this.setState(prevState => ({
+                query: {
+                ...prevState.query, channels: value
+                }
+            }));
+        }
+    
+        handleChangeInternetGb (event){
+            let value = event.target.value;
+            this.setState(prevState => ({
+                query: {
+                ...prevState.query, internetGb: value
+                }
+            }));
+        }
+    */
+
   }, {
     key: "handleChangePhones",
     value: function handleChangePhones(event) {

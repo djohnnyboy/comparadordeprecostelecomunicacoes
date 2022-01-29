@@ -47,7 +47,6 @@ export default class Query extends Component {
                                 </div> 
                             </div>
                         </div>
-                    <input type="submit" onClick={this.props.handler} className="btn btn-primary w-100 mt-5" value="back"/>
                 </div>
             ))      
             : <div className="container"> 
@@ -60,6 +59,7 @@ export default class Query extends Component {
                 </div>
             </div>
             } 
+            <input type="submit" onClick={this.props.handler} className="btn btn-primary w-100 mt-5" value="back"/>
             </div>
         )
     }
