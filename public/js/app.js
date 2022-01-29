@@ -70198,7 +70198,7 @@ var StinkyFooter = /*#__PURE__*/function (_Component) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", {
         className: "bg-dark text-center text-white mt-5"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "text-center p-3"
+        className: "text-center p-5"
       }, "email: info@comparadordeprecostelecomunicacoes.pt")));
     }
   }]);
